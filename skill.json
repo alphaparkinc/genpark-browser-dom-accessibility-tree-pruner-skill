@@ -1,0 +1,37 @@
+{
+  "name": "genpark-browser-dom-accessibility-tree-pruner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Browser DOM accessibility tree pruner filtering non-interactive noise and generating dense token-efficient actionable trees for web agents.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "vision-agent",
+  "tags": [
+    "web-agent",
+    "dom-pruner",
+    "accessibility-tree",
+    "browser-automation",
+    "computer-use"
+  ],
+  "inputs": {
+    "page_url": {
+      "type": "string",
+      "default": "https://app.metronome.com/billing"
+    }
+  },
+  "outputs": {
+    "pruning_id": {
+      "type": "string"
+    },
+    "retained_essential_nodes_count": {
+      "type": "integer"
+    },
+    "estimated_token_reduction": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
